@@ -5,7 +5,7 @@ function Work() {
 
     const [step, setStep] = useState(1);
     return (
-        <div className='h-screen grid grid-cols-1 lg:grid-cols-2 px-[5rem] container mx-auto'>
+        <div className='relative z-[1] grid grid-cols-1 lg:grid-cols-2 px-[5rem] container mx-auto'>
             <div>
                 <img src="/work.png" alt=""/>
             </div>

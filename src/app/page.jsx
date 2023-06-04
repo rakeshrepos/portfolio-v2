@@ -9,8 +9,8 @@ export default function Home() {
     <>
       <About />
       <Work />
-      <Projects />
-      <More />
+      {/* <Projects /> */}
+      {/* <More /> */}
       <Footer />
     </>
   )
