@@ -39,7 +39,7 @@ function About() {
                     <img src="/shapes/shape11.png" data-speed="2" className='layer w-[2rem] absolute top-[70%] left-[30%]'/>
                 </div>
             </div>
-            <div className='relative z-[2] flex flex-col justify-center'>
+            <div className='relative z-[2] flex flex-col justify-center pt-12 lg:pt-0'>
                 <div>
                     <div className="flex justify-center mt-5">
                         <p className='text-custom_blue text-sm'>ABOUT ME</p>
@@ -54,7 +54,7 @@ function About() {
                                 UX/UI Designers.
                             </span>
                         </h2>
-                        <p className='w-[40rem] text-center text-gray-400'>I will help you build your brand and grow your business. I create clarifying strategy, beautiful logo and identity design, engaging websites and ongoing marketing support.
+                        <p className='lg:w-[40rem] text-center text-gray-400'>I will help you build your brand and grow your business. I create clarifying strategy, beautiful logo and identity design, engaging websites and ongoing marketing support.
                         </p>
 
                         <div id="image" className="flex-1 p-2">

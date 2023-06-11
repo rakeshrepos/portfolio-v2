@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Header() {
-    return (<div className='fixed w-full py-[1rem] px-[4rem] z-[5]'>
+    return (<div className='fixed w-full py-[1rem] px-[1rem] lg:px-[4rem] z-[5]'>
         <div className="flex justify-between">
             <a href="/">
                 <section className="shape-section relative">

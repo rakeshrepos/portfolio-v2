@@ -9,7 +9,7 @@ function Projects() {
                     <p className='font-semibold tracking-tight text-custom_pink'>PROJECTS</p>
 
                 </div>
-                <div className="grid grid-cols-3 gap-4 mt-10">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
                     <div className='group p-[2rem] bg-custom_blue/10 hover:translate-y-[-8px] transition-all duration-500'>
                         <div className="flex items-center justify-between">
                             <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="w-10 text-custom_pink">
