@@ -1,8 +1,6 @@
-'use client';
+import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import './globals.css'
-import {Inter} from 'next/font/google'
-import {useEffect, useState} from 'react'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -13,45 +11,11 @@ export const metadata = {
 
 export default function RootLayout({children}) {
 
-    const [mousePosition, setMousePosition] = useState({x: 0, y: 0});
+    return (<html lang="en">
 
-
-    useEffect(() => {
-        const handleMouseMove = (event) => {
-            const x = event.clientX;
-            const y = event.clientY;
-
-            // console.log(x)
-            // console.log(y)
-
-            setMousePosition({x, y});
-        };
-        document.addEventListener('mousemove', handleMouseMove);
-        return() => {
-            document.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
-
-    const handleScroll = (e) => {
-   console.log(e.clientX)
-  };
-
-    const cursorStyle = {
-        background: `radial-gradient(100px at ${
-            mousePosition.x
-        }px ${
-            mousePosition.y
-        }px, rgba(29, 78, 216, 0.15), transparent 80%)`
-    };
-
-    return (
-        <html lang="en">
-            <body className={'bg-[#0e0e0e]'} onScroll={(e)=>handleScroll(e)}>
-                <Header/>
-                <div className="pointer-events-none absolute inset-0 z-30 transition duration-300 lg:absolute"
-                    style={cursorStyle}></div>
-                <div> {children} </div>
-            </body>
-        </html>
-    )
+        <body classname={'bg-[#000]'}>
+            <Header/>
+            <div> {children} </div>
+        </body>
+    </html>)
 }
