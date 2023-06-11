@@ -36,5 +36,17 @@ background: radial-gradient(600px at 704px 118px, rgba(29, 78, 216, 0.15), trans
 }
 
 
-
-
+.diamond-shape {
+  background: #fff;
+  height: 40px;
+  text-align: center;
+  transform:rotate(45deg);
+	width:40px;
+}
+.logo {
+  display: table-cell;
+  height: 40px;
+  transform: rotate(-45deg);
+  vertical-align: middle;
+	width:40px;
+}
